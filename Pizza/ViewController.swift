@@ -14,5 +14,15 @@ class ViewController: UIViewController {
         
         
     }
+    func calculatePrice(pizza: Pizza, size: PizzaSize) -> Float {
+        switch size {
+        case .small:
+            return pizza.basePrice
+        case .medium:
+            return pizza.basePrice * 1.5
+        case .large:
+            return pizza.basePrice * 2.0
+        }
+    }
 }
 
