@@ -16,5 +16,5 @@ enum PizzaSize: String {
 struct Pizza {
     let name: String
     let imageName: String
-    let basePrice: Double
+    let basePrice: Float
 }
